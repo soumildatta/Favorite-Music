@@ -40,8 +40,6 @@ class App extends Component {
             number of people that have liked the song :)
           </p>
 
-          <Search />
-
           <div className="song-cards">
             <SongInfo className="songs" songs={this.state.songs} />
           </div>

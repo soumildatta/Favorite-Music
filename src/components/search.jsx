@@ -8,6 +8,7 @@ class Search extends Component {
       <form className="form-inline d-flex justify-content-center md-form form-sm pb-5">
         <div className="searchbar">
           <input
+            onChange={(e) => this.props.search(e)}
             className="search_input"
             type="text"
             name=""
