@@ -7,40 +7,7 @@ import firebase from "./config/fbConfig";
 
 class App extends Component {
   state = {
-    songs: [
-      {
-        name: "Super Trouper",
-        artist: "ABBA",
-        likes: 5,
-        cover:
-          "https://upload.wikimedia.org/wikipedia/en/1/1c/ABBA_-_Super_Trouper_%28Polar%29.jpg",
-        id: 1,
-      },
-      {
-        name: "Rocketman",
-        artist: "Elton John",
-        likes: 14,
-        cover:
-          "https://www.udiscovermusic.com/wp-content/uploads/2018/07/Elton-John-Honky-Chateau-Album-Cover-web-optimised-820.jpg",
-        id: 2,
-      },
-      {
-        name: "Rocketman",
-        artist: "Elton John",
-        likes: 14,
-        cover:
-          "https://www.udiscovermusic.com/wp-content/uploads/2018/07/Elton-John-Honky-Chateau-Album-Cover-web-optimised-820.jpg",
-        id: 3,
-      },
-      {
-        name: "Rocketman",
-        artist: "Elton John",
-        likes: 14,
-        cover:
-          "https://www.udiscovermusic.com/wp-content/uploads/2018/07/Elton-John-Honky-Chateau-Album-Cover-web-optimised-820.jpg",
-        id: 4,
-      },
-    ],
+    songs: [],
   };
 
   componentDidMount() {
@@ -55,7 +22,7 @@ class App extends Component {
           songs.push(data);
         });
         this.setState({ songs: songs });
-        console.log(snapshot);
+        // console.log(snapshot);
       })
       .catch((error) => console.log(error));
   }

@@ -5,18 +5,24 @@ import "./styles/liker.css";
 
 class Liker extends Component {
   state = {
-    count: 0,
+    count: this.props.likes,
+    click: 0,
     logo: heart,
   };
 
-  // arrow function because it can reference this by default
   handleIncrement = () => {
-    // you cannot modify state directly
-    //  have to use react setState
-    if (this.state.count < 1) {
-      this.setState({ count: this.state.count + 1 });
+    const { click } = this.state;
+    const { count } = this.state;
+    if (click < 1) {
+      this.setState({
+        click: click + 1,
+        count: count + 1,
+      });
     } else {
-      this.setState({ count: this.state.count - 1 });
+      this.setState({
+        click: click - 1,
+        count: count - 1,
+      });
     }
   };
 
@@ -35,7 +41,7 @@ class Liker extends Component {
   }
 
   formatHeart() {
-    return this.state.count === 0 ? heart : emptyHeart;
+    return this.state.click === 0 ? heart : emptyHeart;
   }
 }
 
