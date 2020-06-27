@@ -1,0 +1,16 @@
+.card {
+  margin: 15px 20px 15px 20px;
+}
+
+.card-title {
+  color: #000000;
+}
+
+.cover-art {
+  width: auto;
+  height: 80px;
+}
+
+.song-info {
+  margin-left: 20px;
+}
