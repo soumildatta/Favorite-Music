@@ -12,8 +12,8 @@ class songInfo extends Component {
             <div className="d-flex flex-row">
               <img src={song.cover} alt="abba art" className="cover-art" />
               <div className="flex-grow-1 text-justify song-info">
-                <h4 className="card-title">{song.name}</h4>
-                <h5 className="card-subtitle mb-2 text-muted">{song.artist}</h5>
+                <h5 className="card-title">{song.name}</h5>
+                <h6 className="card-subtitle text-muted">{song.artist}</h6>
               </div>
               <Liker />
             </div>

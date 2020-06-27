@@ -1,5 +1,5 @@
 .card {
-  margin: 15px 20px 15px 20px;
+  margin: 25px 8%;
 }
 
 .card-title {
@@ -8,9 +8,11 @@
 
 .cover-art {
   width: auto;
-  height: 80px;
+  height: 90px;
+  border-radius: 5px;
 }
 
 .song-info {
-  margin-left: 20px;
+  margin-left: 18px;
+  padding: 18px 0;
 }

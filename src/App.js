@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 // import NewLiker from "./components/newLiker";
+import SearchIcon from "./search.svg";
 import SongInfo from "./components/songInfo";
 
 class App extends Component {
@@ -22,16 +23,73 @@ class App extends Component {
           "https://www.udiscovermusic.com/wp-content/uploads/2018/07/Elton-John-Honky-Chateau-Album-Cover-web-optimised-820.jpg",
         id: 2,
       },
+      {
+        name: "Rocketman",
+        artist: "Elton John",
+        likes: 14,
+        cover:
+          "https://www.udiscovermusic.com/wp-content/uploads/2018/07/Elton-John-Honky-Chateau-Album-Cover-web-optimised-820.jpg",
+        id: 2,
+      },
+      {
+        name: "Rocketman",
+        artist: "Elton John",
+        likes: 14,
+        cover:
+          "https://www.udiscovermusic.com/wp-content/uploads/2018/07/Elton-John-Honky-Chateau-Album-Cover-web-optimised-820.jpg",
+        id: 2,
+      },
+      {
+        name: "Rocketman",
+        artist: "Elton John",
+        likes: 14,
+        cover:
+          "https://www.udiscovermusic.com/wp-content/uploads/2018/07/Elton-John-Honky-Chateau-Album-Cover-web-optimised-820.jpg",
+        id: 2,
+      },
+      {
+        name: "Rocketman",
+        artist: "Elton John",
+        likes: 14,
+        cover:
+          "https://www.udiscovermusic.com/wp-content/uploads/2018/07/Elton-John-Honky-Chateau-Album-Cover-web-optimised-820.jpg",
+        id: 2,
+      },
+      {
+        name: "Rocketman",
+        artist: "Elton John",
+        likes: 14,
+        cover:
+          "https://www.udiscovermusic.com/wp-content/uploads/2018/07/Elton-John-Honky-Chateau-Album-Cover-web-optimised-820.jpg",
+        id: 2,
+      },
     ],
   };
 
   render() {
     return (
       <div className="App">
-        <header className="App-header">
+        <div className="App-header">
           {/* <img src={logo} className="App-logo" alt="logo" /> */}
-          <SongInfo songs={this.state.songs} />
-        </header>
+          <h1>Soumil's Favorite Songs</h1>
+
+          <form className="form-inline d-flex justify-content-center md-form form-sm pb-5">
+            <div class="searchbar">
+              <input
+                class="search_input"
+                type="text"
+                name=""
+                placeholder="Search song or artist"
+              />
+              <a href="#" class="search_icon">
+                <img src={SearchIcon} alt="Search icon"></img>
+              </a>
+            </div>
+          </form>
+          <div className="song-cards">
+            <SongInfo className="songs" songs={this.state.songs} />
+          </div>
+        </div>
       </div>
     );
   }
