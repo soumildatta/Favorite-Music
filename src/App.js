@@ -3,6 +3,7 @@ import "./App.css";
 // import NewLiker from "./components/newLiker";
 import SearchIcon from "./search.svg";
 import SongInfo from "./components/songInfo";
+import firebase from "./config/fbConfig";
 
 class App extends Component {
   state = {
@@ -29,7 +30,7 @@ class App extends Component {
         likes: 14,
         cover:
           "https://www.udiscovermusic.com/wp-content/uploads/2018/07/Elton-John-Honky-Chateau-Album-Cover-web-optimised-820.jpg",
-        id: 2,
+        id: 3,
       },
       {
         name: "Rocketman",
@@ -37,34 +38,27 @@ class App extends Component {
         likes: 14,
         cover:
           "https://www.udiscovermusic.com/wp-content/uploads/2018/07/Elton-John-Honky-Chateau-Album-Cover-web-optimised-820.jpg",
-        id: 2,
-      },
-      {
-        name: "Rocketman",
-        artist: "Elton John",
-        likes: 14,
-        cover:
-          "https://www.udiscovermusic.com/wp-content/uploads/2018/07/Elton-John-Honky-Chateau-Album-Cover-web-optimised-820.jpg",
-        id: 2,
-      },
-      {
-        name: "Rocketman",
-        artist: "Elton John",
-        likes: 14,
-        cover:
-          "https://www.udiscovermusic.com/wp-content/uploads/2018/07/Elton-John-Honky-Chateau-Album-Cover-web-optimised-820.jpg",
-        id: 2,
-      },
-      {
-        name: "Rocketman",
-        artist: "Elton John",
-        likes: 14,
-        cover:
-          "https://www.udiscovermusic.com/wp-content/uploads/2018/07/Elton-John-Honky-Chateau-Album-Cover-web-optimised-820.jpg",
-        id: 2,
+        id: 4,
       },
     ],
   };
+
+  componentDidMount() {
+    console.log("mounted");
+    const db = firebase.firestore();
+    db.collection("songs")
+      .get()
+      .then((snapshot) => {
+        const songs = [];
+        snapshot.forEach((doc) => {
+          const data = doc.data();
+          songs.push(data);
+        });
+        this.setState({ songs: songs });
+        console.log(snapshot);
+      })
+      .catch((error) => console.log(error));
+  }
 
   render() {
     return (
@@ -80,14 +74,14 @@ class App extends Component {
           </p>
 
           <form className="form-inline d-flex justify-content-center md-form form-sm pb-5">
-            <div class="searchbar">
+            <div className="searchbar">
               <input
-                class="search_input"
+                className="search_input"
                 type="text"
                 name=""
                 placeholder="Search song or artist"
               />
-              <a href="#" class="search_icon">
+              <a href="#" className="search_icon">
                 <img src={SearchIcon} alt="Search icon"></img>
               </a>
             </div>

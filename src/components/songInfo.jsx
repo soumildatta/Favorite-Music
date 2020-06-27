@@ -7,7 +7,7 @@ class songInfo extends Component {
     const { songs } = this.props;
     const songList = songs.map((song) => {
       return (
-        <div className="card">
+        <div key={song.id} className="card">
           <div className="card-body">
             <div className="d-flex flex-row">
               <img src={song.cover} alt="abba art" className="cover-art" />
