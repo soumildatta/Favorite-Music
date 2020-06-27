@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import "./App.css";
 // import NewLiker from "./components/newLiker";
-import SearchIcon from "./search.svg";
 import SongInfo from "./components/songInfo";
 import firebase from "./config/fbConfig";
+import Search from "./components/search";
 
 class App extends Component {
   state = {
@@ -40,19 +40,8 @@ class App extends Component {
             number of people that have liked the song :)
           </p>
 
-          <form className="form-inline d-flex justify-content-center md-form form-sm pb-5">
-            <div className="searchbar">
-              <input
-                className="search_input"
-                type="text"
-                name=""
-                placeholder="Search song or artist"
-              />
-              <a href="#" className="search_icon">
-                <img src={SearchIcon} alt="Search icon"></img>
-              </a>
-            </div>
-          </form>
+          <Search />
+
           <div className="song-cards">
             <SongInfo className="songs" songs={this.state.songs} />
           </div>

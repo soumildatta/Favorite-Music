@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import heart from "../heart.svg";
 import emptyHeart from "../EmptyHeart.svg";
 import "./styles/liker.css";
+import firebase from "../config/fbConfig";
 
 class Liker extends Component {
   state = {
@@ -24,6 +25,17 @@ class Liker extends Component {
         count: count - 1,
       });
     }
+
+    this.testing();
+  };
+
+  testing = () => {
+    firebase.firestore().collection("songs").doc(this.props.name).set(
+      {
+        likes: 12,
+      },
+      { merge: true }
+    );
   };
 
   render() {
