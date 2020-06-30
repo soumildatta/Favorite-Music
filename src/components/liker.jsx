@@ -6,37 +6,52 @@ import firebase from "../config/fbConfig";
 
 class Liker extends Component {
   state = {
-    count: this.props.likes,
     click: 0,
     logo: heart,
   };
 
   handleIncrement = () => {
     const { click } = this.state;
-    const { count } = this.state;
     if (click < 1) {
       this.setState({
         click: click + 1,
-        count: count + 1,
+        // likes: likes + 1,
       });
+      this.testing(1, this.props.likes);
     } else {
       this.setState({
         click: click - 1,
-        count: count - 1,
+        // likes: likes - 1,
       });
+      this.testing(0, this.props.likes);
     }
-
-    this.testing();
   };
 
-  testing = () => {
-    firebase.firestore().collection("songs").doc(this.props.name).set(
-      {
-        likes: 12,
-      },
-      { merge: true }
-    );
-  };
+  testing(incOrDec, likes) {
+    if (incOrDec === 1) {
+      firebase
+        .firestore()
+        .collection("songs")
+        .doc(this.props.name)
+        .set(
+          {
+            likes: likes + 1,
+          },
+          { merge: true }
+        );
+    } else {
+      firebase
+        .firestore()
+        .collection("songs")
+        .doc(this.props.name)
+        .set(
+          {
+            likes: likes - 1,
+          },
+          { merge: true }
+        );
+    }
+  }
 
   render() {
     return (
@@ -47,7 +62,7 @@ class Liker extends Component {
           src={this.formatHeart()}
           alt="like button"
         />
-        <h6>{this.state.count}</h6>
+        <h6>{this.props.likes}</h6>
       </div>
     );
   }

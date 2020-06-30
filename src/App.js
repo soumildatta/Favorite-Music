@@ -31,19 +31,24 @@ class App extends Component {
       let changes = snapshot.docChanges();
       changes.forEach((change) => {
         if (change.type === "modified") {
-          // var songs = this.state.songs;
-          // const found = this.state.songs.find((obj) => {
-          //   return obj.id === change.doc.data().id;
-          // });
-          // // console.log(found);
-          // if (found) {
-          //   songs.splice(found, 1);
-          //   songs.push(change.doc.data());
-          //   console.log(songs);
-          //   this.setState({
-          //     songs: songs,
-          //   });
-          // }
+          var songs = this.state.songs;
+
+          const changed = songs.find((p) => {
+            if (p.id === change.doc.data().id) {
+              p.likes = change.doc.data().likes;
+              return true;
+            }
+            return false;
+          });
+
+          if (changed) {
+            this.setState({
+              songs: songs,
+            });
+            // console.log(songs);
+          }
+
+          // console.log(this.state.songs);
         }
       });
     });
