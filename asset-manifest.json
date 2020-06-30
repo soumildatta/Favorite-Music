@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/Favorite-Music/static/css/main.95df7ef7.chunk.css",
+    "main.js": "/Favorite-Music/static/js/main.0c4cf63f.chunk.js",
+    "main.js.map": "/Favorite-Music/static/js/main.0c4cf63f.chunk.js.map",
+    "runtime-main.js": "/Favorite-Music/static/js/runtime-main.300f66bd.js",
+    "runtime-main.js.map": "/Favorite-Music/static/js/runtime-main.300f66bd.js.map",
+    "static/css/2.829c9cb5.chunk.css": "/Favorite-Music/static/css/2.829c9cb5.chunk.css",
+    "static/js/2.9752680e.chunk.js": "/Favorite-Music/static/js/2.9752680e.chunk.js",
+    "static/js/2.9752680e.chunk.js.map": "/Favorite-Music/static/js/2.9752680e.chunk.js.map",
+    "index.html": "/Favorite-Music/index.html",
+    "precache-manifest.a745ff48fa5dbc21e91f87a309fbc4f1.js": "/Favorite-Music/precache-manifest.a745ff48fa5dbc21e91f87a309fbc4f1.js",
+    "service-worker.js": "/Favorite-Music/service-worker.js",
+    "static/css/2.829c9cb5.chunk.css.map": "/Favorite-Music/static/css/2.829c9cb5.chunk.css.map",
+    "static/css/main.95df7ef7.chunk.css.map": "/Favorite-Music/static/css/main.95df7ef7.chunk.css.map",
+    "static/js/2.9752680e.chunk.js.LICENSE.txt": "/Favorite-Music/static/js/2.9752680e.chunk.js.LICENSE.txt",
+    "static/media/EmptyHeart.svg": "/Favorite-Music/static/media/EmptyHeart.cd6a5112.svg",
+    "static/media/App.css": "/Favorite-Music/static/media/background.0bcfec20.jpg",
+    "static/media/heart.svg": "/Favorite-Music/static/media/heart.32d5e34b.svg",
+    "static/media/search.svg": "/Favorite-Music/static/media/search.f9719b88.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.300f66bd.js",
+    "static/css/2.829c9cb5.chunk.css",
+    "static/js/2.9752680e.chunk.js",
+    "static/css/main.95df7ef7.chunk.css",
+    "static/js/main.0c4cf63f.chunk.js"
+  ]
+}
