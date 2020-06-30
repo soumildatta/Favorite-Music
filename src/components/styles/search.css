@@ -39,12 +39,11 @@
 
 .search_icon {
   height: 40px;
-  width: 40px;
+  width: 35px;
   float: right;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  color: white;
   text-decoration: none;
 }

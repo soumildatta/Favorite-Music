@@ -3,7 +3,7 @@ import "./App.css";
 // import NewLiker from "./components/newLiker";
 import SongInfo from "./components/songInfo";
 import firebase from "./config/fbConfig";
-import Search from "./components/search";
+// import Search from "./components/search";
 
 class App extends Component {
   state = {
@@ -25,6 +25,28 @@ class App extends Component {
         // console.log(snapshot);
       })
       .catch((error) => console.log(error));
+
+    db.collection("songs").onSnapshot((snapshot) => {
+      // console.log(snapshot.docChanges());
+      let changes = snapshot.docChanges();
+      changes.forEach((change) => {
+        if (change.type === "modified") {
+          // var songs = this.state.songs;
+          // const found = this.state.songs.find((obj) => {
+          //   return obj.id === change.doc.data().id;
+          // });
+          // // console.log(found);
+          // if (found) {
+          //   songs.splice(found, 1);
+          //   songs.push(change.doc.data());
+          //   console.log(songs);
+          //   this.setState({
+          //     songs: songs,
+          //   });
+          // }
+        }
+      });
+    });
   }
 
   render() {

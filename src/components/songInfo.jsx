@@ -35,7 +35,7 @@ class songInfo extends Component {
                   <h5 className="card-title">{song.name}</h5>
                   <h6 className="card-subtitle text-muted">{song.artist}</h6>
                 </div>
-                <Liker likes={song.likes} name={song.name} />
+                {/* <Liker likes={song.likes} name={song.name} /> */}
               </div>
             </div>
           </div>
