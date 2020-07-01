@@ -17,18 +17,19 @@ class App extends Component {
       .get()
       .then((snapshot) => {
         const songs = [];
+
         snapshot.forEach((doc) => {
           const data = doc.data();
           songs.push(data);
         });
+
         this.setState({ songs: songs });
-        // console.log(snapshot);
       })
       .catch((error) => console.log(error));
 
     db.collection("songs").onSnapshot((snapshot) => {
-      // console.log(snapshot.docChanges());
       let changes = snapshot.docChanges();
+
       changes.forEach((change) => {
         if (change.type === "modified") {
           var songs = this.state.songs;
@@ -45,10 +46,7 @@ class App extends Component {
             this.setState({
               songs: songs,
             });
-            // console.log(songs);
           }
-
-          // console.log(this.state.songs);
         }
       });
     });
@@ -58,7 +56,6 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
-          {/* <img src={logo} className="App-logo" alt="logo" /> */}
           <h1>Soumil's Favorite Songs</h1>
           <p>
             This is a list of my current favorite songs. In case youre curious

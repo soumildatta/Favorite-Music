@@ -26,14 +26,15 @@ class songInfo extends Component {
         }
       })
       .map((song) => {
-        // console.log(song.likes);
         return (
           <div key={song.id} className="card">
             <div className="card-body">
               <div className="d-flex flex-row">
                 <img src={song.cover} alt="abba art" className="cover-art" />
                 <div className="flex-grow-1 text-justify song-info">
-                  <h5 className="card-title">{song.name}</h5>
+                  <a href={song.link} target="_blank">
+                    <h5 className="card-title">{song.name}</h5>
+                  </a>
                   <h6 className="card-subtitle text-muted">{song.artist}</h6>
                 </div>
                 <Liker likes={song.likes} name={song.name} />

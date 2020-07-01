@@ -1,8 +1,10 @@
 import React, { Component } from "react";
-import heart from "../heart.svg";
-import emptyHeart from "../EmptyHeart.svg";
-import "./styles/liker.css";
 import firebase from "../config/fbConfig";
+
+import "./styles/liker.css";
+
+import heart from "./img/heart.svg";
+import emptyHeart from "./img/emptyHeart.svg";
 
 class Liker extends Component {
   state = {
@@ -12,22 +14,22 @@ class Liker extends Component {
 
   handleIncrement = () => {
     const { click } = this.state;
+
     if (click < 1) {
       this.setState({
         click: click + 1,
-        // likes: likes + 1,
       });
-      this.testing(1, this.props.likes);
+      this.updateFirestoreLikes(1, this.props.likes);
     } else {
       this.setState({
         click: click - 1,
-        // likes: likes - 1,
       });
-      this.testing(0, this.props.likes);
+      this.updateFirestoreLikes(0, this.props.likes);
     }
   };
 
-  testing(incOrDec, likes) {
+  updateFirestoreLikes(incOrDec, likes) {
+    // 1 = liked, 0 = unliked
     if (incOrDec === 1) {
       firebase
         .firestore()
@@ -53,6 +55,10 @@ class Liker extends Component {
     }
   }
 
+  formatHeart() {
+    return this.state.click === 0 ? heart : emptyHeart;
+  }
+
   render() {
     return (
       <div className="text-center liker-items">
@@ -65,10 +71,6 @@ class Liker extends Component {
         <h6>{this.props.likes}</h6>
       </div>
     );
-  }
-
-  formatHeart() {
-    return this.state.click === 0 ? heart : emptyHeart;
   }
 }
 

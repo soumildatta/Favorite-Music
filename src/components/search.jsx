@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import SearchIcon from "./search.svg";
+
 import "./styles/search.css";
+import SearchIcon from "./img/search.svg";
 
 class Search extends Component {
   render() {

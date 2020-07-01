@@ -1,0 +1,13 @@
+{
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+},
+"discord.detailsIdle": "Just chillin",
+"discord.detailsEditing": "Just doin some work",
+"discord.detailsDebugging": "Just debugging and dyin",
+"discord.largeImage": "Editing a weird file",
+"discord.lowerDetailsDebugging": "Debugging stuff",
+"discord.lowerDetailsEditing": "Working on stuff",
+"discord.lowerDetailsIdle": "Just chillin",
+"discord.lowerDetailsNotFound": "No workspace and nothing"
+}
