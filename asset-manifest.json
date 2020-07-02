@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/Favorite-Music/static/css/main.95df7ef7.chunk.css",
-    "main.js": "/Favorite-Music/static/js/main.12274672.chunk.js",
-    "main.js.map": "/Favorite-Music/static/js/main.12274672.chunk.js.map",
+    "main.css": "/Favorite-Music/static/css/main.e77fecf5.chunk.css",
+    "main.js": "/Favorite-Music/static/js/main.d23b7af4.chunk.js",
+    "main.js.map": "/Favorite-Music/static/js/main.d23b7af4.chunk.js.map",
     "runtime-main.js": "/Favorite-Music/static/js/runtime-main.300f66bd.js",
     "runtime-main.js.map": "/Favorite-Music/static/js/runtime-main.300f66bd.js.map",
     "static/css/2.829c9cb5.chunk.css": "/Favorite-Music/static/css/2.829c9cb5.chunk.css",
-    "static/js/2.9752680e.chunk.js": "/Favorite-Music/static/js/2.9752680e.chunk.js",
-    "static/js/2.9752680e.chunk.js.map": "/Favorite-Music/static/js/2.9752680e.chunk.js.map",
+    "static/js/2.1e9fd10a.chunk.js": "/Favorite-Music/static/js/2.1e9fd10a.chunk.js",
+    "static/js/2.1e9fd10a.chunk.js.map": "/Favorite-Music/static/js/2.1e9fd10a.chunk.js.map",
     "index.html": "/Favorite-Music/index.html",
-    "precache-manifest.7a0aab52c406f9998c3b5a57055c504b.js": "/Favorite-Music/precache-manifest.7a0aab52c406f9998c3b5a57055c504b.js",
+    "precache-manifest.d7d4d14605286da49157531bcf56233a.js": "/Favorite-Music/precache-manifest.d7d4d14605286da49157531bcf56233a.js",
     "service-worker.js": "/Favorite-Music/service-worker.js",
     "static/css/2.829c9cb5.chunk.css.map": "/Favorite-Music/static/css/2.829c9cb5.chunk.css.map",
-    "static/css/main.95df7ef7.chunk.css.map": "/Favorite-Music/static/css/main.95df7ef7.chunk.css.map",
-    "static/js/2.9752680e.chunk.js.LICENSE.txt": "/Favorite-Music/static/js/2.9752680e.chunk.js.LICENSE.txt",
-    "static/media/EmptyHeart.svg": "/Favorite-Music/static/media/EmptyHeart.cd6a5112.svg",
-    "static/media/App.css": "/Favorite-Music/static/media/background.0bcfec20.jpg",
+    "static/css/main.e77fecf5.chunk.css.map": "/Favorite-Music/static/css/main.e77fecf5.chunk.css.map",
+    "static/js/2.1e9fd10a.chunk.js.LICENSE.txt": "/Favorite-Music/static/js/2.1e9fd10a.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/Favorite-Music/static/media/background.d52f8a65.jpg",
+    "static/media/emptyHeart.svg": "/Favorite-Music/static/media/emptyHeart.cd6a5112.svg",
     "static/media/heart.svg": "/Favorite-Music/static/media/heart.32d5e34b.svg",
     "static/media/search.svg": "/Favorite-Music/static/media/search.f9719b88.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.300f66bd.js",
     "static/css/2.829c9cb5.chunk.css",
-    "static/js/2.9752680e.chunk.js",
-    "static/css/main.95df7ef7.chunk.css",
-    "static/js/main.12274672.chunk.js"
+    "static/js/2.1e9fd10a.chunk.js",
+    "static/css/main.e77fecf5.chunk.css",
+    "static/js/main.d23b7af4.chunk.js"
   ]
 }
