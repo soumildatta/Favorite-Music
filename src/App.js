@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import "./App.css";
-// import NewLiker from "./components/newLiker";
-import SongInfo from "./components/songInfo";
 import firebase from "./config/fbConfig";
-// import Search from "./components/search";
+
+import SongInfo from "./components/songInfo";
+
+import "./App.css";
 
 class App extends Component {
   state = {
