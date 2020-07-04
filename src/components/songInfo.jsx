@@ -24,6 +24,7 @@ class songInfo extends Component {
         ) {
           return data;
         }
+        return [];
       })
       .map((song) => {
         return (
@@ -32,7 +33,7 @@ class songInfo extends Component {
               <div className="d-flex flex-row">
                 <img src={song.cover} alt="abba art" className="cover-art" />
                 <div className="flex-grow-1 text-justify song-info">
-                  <a href={song.link} target="_blank">
+                  <a href={song.link} target="_blank" rel="noopener noreferrer">
                     <h5 className="card-title">{song.name}</h5>
                   </a>
                   <h6 className="card-subtitle text-muted">{song.artist}</h6>
