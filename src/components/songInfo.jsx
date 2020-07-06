@@ -18,7 +18,6 @@ class songInfo extends Component {
     var rows = [];
     for (var i = 0; i < songList.length; i += 2) {
       if (i % 2 === 0) {
-        console.log(i);
         rows.push(
           <div key="i" className="card-deck">
             {songList[i]}
@@ -41,7 +40,6 @@ class songInfo extends Component {
         ) {
           return data;
         }
-        return [];
       })
       .map((song) => {
         return (
