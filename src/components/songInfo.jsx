@@ -13,6 +13,23 @@ class songInfo extends Component {
     this.setState({ search: keyword });
   };
 
+  formatList(songList) {
+    // return songList;
+    var rows = [];
+    for (var i = 0; i < songList.length; i += 2) {
+      if (i % 2 === 0) {
+        console.log(i);
+        rows.push(
+          <div key="i" className="card-deck">
+            {songList[i]}
+            {songList[i + 1]}
+          </div>
+        );
+      }
+    }
+    return rows;
+  }
+
   render() {
     const { songs } = this.props;
     const songList = songs
@@ -44,11 +61,11 @@ class songInfo extends Component {
           </div>
         );
       });
-
     return (
       <div className="song-list">
         <Search search={this.search} />
-        {songList}
+        {/* {songList} */}
+        {this.formatList(songList)}
       </div>
     );
   }

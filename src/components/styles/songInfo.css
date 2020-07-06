@@ -1,5 +1,10 @@
 .card {
-  margin: 25px 8%;
+  margin: 25px 0;
+  min-width: 330px;
+}
+
+.card-deck {
+  margin: 0 8%;
 }
 
 .card-title {
