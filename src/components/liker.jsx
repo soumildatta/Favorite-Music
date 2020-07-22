@@ -68,7 +68,7 @@ class Liker extends Component {
           src={this.formatHeart()}
           alt="like button"
         />
-        <h6>{this.props.likes}</h6>
+        <h6 data-testid="like-count">{this.props.likes}</h6>
       </div>
     );
   }

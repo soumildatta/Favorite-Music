@@ -49,9 +49,16 @@ class songInfo extends Component {
                 <img src={song.cover} alt="abba art" className="cover-art" />
                 <div className="flex-grow-1 text-justify song-info">
                   <a href={song.link} target="_blank" rel="noopener noreferrer">
-                    <h5 className="card-title">{song.name}</h5>
+                    <h5 className="card-title" data-testid="song-name">
+                      {song.name}
+                    </h5>
                   </a>
-                  <h6 className="card-subtitle text-muted">{song.artist}</h6>
+                  <h6
+                    className="card-subtitle text-muted"
+                    data-testid="song-artist"
+                  >
+                    {song.artist}
+                  </h6>
                 </div>
                 <Liker likes={song.likes} name={song.name} />
               </div>

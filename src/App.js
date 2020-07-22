@@ -7,6 +7,7 @@ import "./App.css";
 
 class App extends Component {
   state = {
+    // each object contains artist, cover, id, link, likes, name
     songs: [],
   };
 
