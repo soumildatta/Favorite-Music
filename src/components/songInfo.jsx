@@ -40,6 +40,8 @@ class songInfo extends Component {
         ) {
           return data;
         }
+        // failed
+        return null;
       })
       .map((song) => {
         return (

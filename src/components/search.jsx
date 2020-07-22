@@ -15,9 +15,9 @@ class Search extends Component {
             name=""
             placeholder="Search song or artist"
           />
-          <a href="#" className="search_icon">
+          <div className="search_icon">
             <img src={SearchIcon} alt="Search icon"></img>
-          </a>
+          </div>
         </div>
       </form>
     );
