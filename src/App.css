@@ -20,6 +20,12 @@ body {
   color: white;
 }
 
+footer {
+  margin: 10px;
+  font-size: 15px;
+  margin-top: 20px;
+}
+
 .App-link {
   color: #61dafb;
 }

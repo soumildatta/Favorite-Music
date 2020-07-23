@@ -68,6 +68,8 @@ class App extends Component {
           <div className="song-cards">
             <SongInfo className="songs" songs={this.state.songs} />
           </div>
+
+          <footer>Copyright Soumil Datta © {new Date().getFullYear()}</footer>
         </div>
       </div>
     );
