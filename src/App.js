@@ -62,7 +62,8 @@ class App extends Component {
             This is a list of my current favorite songs. You can search through
             my favorite songs using the search bar below. Leave a like on songs
             to let me know you like them too! You can also see the total number
-            of people that have liked the song :)
+            of people that have liked the song update in real time as people
+            like them :)
           </p>
 
           <div className="song-cards">
