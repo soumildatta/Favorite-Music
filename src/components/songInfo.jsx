@@ -49,7 +49,7 @@ class songInfo extends Component {
             <div className="card-body">
               <div className="d-flex flex-row">
                 <img src={song.cover} alt="abba art" className="cover-art" />
-                <div className="flex-grow-1 text-justify song-info">
+                <div className="flex-grow-1 text-left song-info">
                   <a href={song.link} target="_blank" rel="noopener noreferrer">
                     <h5 className="card-title" data-testid="song-name">
                       {song.name}
