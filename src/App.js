@@ -59,9 +59,9 @@ class App extends Component {
         <div className="App-header">
           <h1>Soumil's Favorite Songs</h1>
           <p>
-            This is a list of my current favorite songs. You can search through
-            my favorite songs using the search bar below. Let me know which
-            songs you like by leaving a like!
+            Come join me in my journey for discovering cool new songs! You can
+            search through my recent favorite songs using the search bar below.
+            Let me know which songs you like by leaving a like!
           </p>
 
           <div className="song-cards">
