@@ -61,7 +61,7 @@ class App extends Component {
           <p>
             This is a list of my current favorite songs. You can search through
             my favorite songs using the search bar below. Let me know which
-            songs you like by leaving a like! 🙂
+            songs you like by leaving a like!
           </p>
 
           <div className="song-cards">
